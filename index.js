@@ -25,6 +25,7 @@ POEditor.prototype.download = function(proyect, lang, type, filters, tags, callb
 		action : 'export',
 		id  :  proyect,
 		language  : lang,
+		type  : type,
 		filters : JSON.stringify(filters),
 		tags : JSON.stringify(tags)
 	}, function (err, link) {

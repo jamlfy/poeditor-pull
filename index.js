@@ -28,7 +28,7 @@ POEditor.prototype.download = function(proyect, lang, type, filters, tags, callb
 		filters : JSON.stringify(filters),
 		tags : JSON.stringify(tags)
 	}, function (err, link) {
-		callback(err, !err && item && item.link ? request(link.item) : null);
+		callback(err, !err && link && link.item ? request(link.item) : null);
 	});
 };
 

@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/alejonext/poeditor-pull/issues"
   },
-  "homepage": "https://github.com/alejonext/poeditor-pull#readme"
+  "homepage": "https://github.com/alejonext/poeditor-pull#readme",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
 }

@@ -41,11 +41,7 @@ POEditor.prototype.__request = function( params, cb) {
 		}
 
 		try {
-			var data = JSON.parse(body)
-			if (data.success === false){
-				err = new Error(data.errors || data.error);
-			}
-
+			var data = JSON.parse(body);
 			cb(err, data);
 		}catch(err) {
 			cb(err || new Error(data.errors), data);

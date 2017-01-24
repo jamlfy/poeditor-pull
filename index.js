@@ -35,7 +35,7 @@ POEditor.prototype.download = function(proyect, lang, type, filters, tags, callb
 
 POEditor.prototype.__request = function( params, cb) {
 	params.api_token  = this.key;
-	request.post(API_URL, params, function (err, res, body) {
+	request.post(API_URL, { form: params }, function (err, res, body) {
 		if(err || res.statusCode !== 200){
 			return cb(err || new Error(res.headers.status), data);
 		}
